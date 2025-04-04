@@ -1,0 +1,21 @@
+.cursor_circle_outside{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(42, 226, 36, 0.468);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999999999999999999999;
+    top:0;
+    left:0;
+    cursor: none;
+}
+.cursor_circle_inside{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(10, 63, 8);
+ 
+}

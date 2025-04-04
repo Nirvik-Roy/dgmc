@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../assets/358490769_unemployment.jpg'
 import img2 from '../assets/619853351_covid-hospital-india-16369471573x2.jpg'
 import img3 from '../assets/624992158_Screenshot_2025_0216_175631.jpg'
 import img4 from '../assets/296745101_7962037506_1720b96cba_z.jpg'
 import img5 from '../assets/553714517_2151494251.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const HomeProjects = () => {
+       useEffect(()=>{
+                  AOS.init({
+                      duration: 1000,
+                      easing: 'ease-in-out',
+                      once: true,
+          offset: 120, 
+                  })
+               },[])
   return (
     <div className='home_project_wrapper'>
 <div className='universal_container'>
@@ -30,7 +40,7 @@ columnGap: '10px'
        }} className='about_head'>Our <span>Projects</span></h1>
 
        <div className='projects_card_wrapper'>
-        <div className='project_1'>
+        <div className='project_1' data-aos='fade-right' >
             <img src={img}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 1</h6>
@@ -50,7 +60,7 @@ columnGap: '10px'
                 }}>Know More <i class="fa-solid fa-arrow-right" ></i></h6>
             </div>
         </div>
-        <div className='project_1'>
+        <div className='project_1 ' data-aos='fade-up' data-aos-delay='100'>
         <img src={img2}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 2</h6>
@@ -70,7 +80,7 @@ columnGap: '10px'
                 }}>Know More <i class="fa-solid fa-arrow-right" ></i></h6>
             </div>
         </div>
-        <div className='project_1'>
+        <div className='project_1' data-aos='fade-left' data-aos-delay='200'>
         <img src={img3}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 3</h6>
@@ -90,7 +100,7 @@ columnGap: '10px'
                 }}>Know More <i class="fa-solid fa-arrow-right" ></i></h6>
             </div>
         </div>
-        <div className='project_1'>
+        <div className='project_1' data-aos='fade-right' data-aos-delay='300'>
         <img src={img4}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 4</h6>
@@ -110,7 +120,7 @@ columnGap: '10px'
                 }}>Know More <i class="fa-solid fa-arrow-right" ></i></h6>
             </div>
         </div>
-        <div className='project_1'>
+        <div className='project_1' data-aos='fade-up' data-aos-delay='400'>
         <img src={img}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 5</h6>
@@ -130,7 +140,7 @@ columnGap: '10px'
                 }}>Know More <i class="fa-solid fa-arrow-right" ></i></h6>
             </div>
         </div>
-        <div className='project_1'>
+        <div className='project_1' data-aos='fade-left' data-aos-delay='500'>
         <img src={img5}/>
             <div className='project_details_div'>
             <h6> <i class="fa-solid fa-tags fa-rotate-90"></i> Project 6</h6>

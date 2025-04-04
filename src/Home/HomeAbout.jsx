@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../assets/photo-1542810634-71277d95dcbb.avif'
 import img1 from '../assets/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg'
 import img2 from '../assets/premium_photo-1682092588009-51eacb1d03ce.avif'
 import img3 from '../assets/photo-1567001766755-3a3775614445.avif'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const HomeAbout = () => {
+     useEffect(()=>{
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+offset: 120, 
+        })
+     },[])
     return (
         <>
             <div className='universal_container'>
                 <div className='homeabout_wrapper'>
-                    <div className='home_about_left'>
+                    <div className='home_about_left' data-aos="fade-up">
                         <div style={{
 
                             display: 'flex',
@@ -54,14 +64,14 @@ const HomeAbout = () => {
                             border:'none'
                         }}>About Us</div>
                     </div>
-                    <div className='home_about_right' style={{
+                    <div className='home_about_right'  style={{
                         position:'relative'
                     }}>
                   
-                  <img className='img_1' src={img2}/>
-                  <img className='img_2' src={img}/>
-                  <img className='img_3' src={img3}/>
-                  <img className='img_4' src={img1}/>
+                  <img className='img_1' data-aos="fade-left" src={img2}/>
+                  <img className='img_2' data-aos="fade-right" src={img}/>
+                  <img className='img_3' data-aos="fade-up" src={img3}/>
+                  <img className='img_4' data-aos="fade-left" src={img1}/>
                     </div>
                 </div>
             </div>

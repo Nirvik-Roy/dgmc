@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination,Autoplay } from 'swiper/modules';
 import img1 from '../assets/296745101_7962037506_1720b96cba_z.jpg'
 import img2 from '../assets/358490769_unemployment.jpg'
 import img3 from '../assets/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg'
@@ -30,8 +30,13 @@ const Imagegallery = () => {
         grabCursor={false}
         centeredSlides={true}
         slidesPerView={'auto'}
-          autoplay={true}
-          autoplaySpeed={1000}
+          autoplay={
+            {
+              delay: 2000,
+              disableOnInteraction: false,
+            }
+          }
+          speed={1000}
         coverflowEffect={{
           rotate: 30,
           stretch: 30,
@@ -41,7 +46,7 @@ const Imagegallery = () => {
         }}
         loop={true}
         pagination={false}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination,Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>

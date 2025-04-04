@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../assets/939610874_dream.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Footer = () => {
+  useEffect(()=>{
+              AOS.init({
+                  duration: 500,
+                  easing: 'ease-in-out',
+                  once: true,
+      offset: 120, 
+              })
+           },[])
   return (
     <div className='footer_wrapper'>
     <div class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row d-flex justify-content-start align-items-center">
-                    <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="col-xl-4 col-md-4 mb-30" data-aos='fade-up'>
                         <div class="single-cta d-flex justify-content-start align-items-center">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
@@ -16,7 +26,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="col-xl-4 col-md-4 mb-30" data-aos='fade-up' data-aos-delay='200'>
                         <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
@@ -25,7 +35,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="col-xl-4 col-md-4 mb-30" data-aos='fade-up' data-aos-delay='400'>
                         <div class="single-cta">
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
@@ -38,7 +48,7 @@ const Footer = () => {
             </div>
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="col-xl-4 col-lg-4 mb-50" data-aos='fade-up' data-aos-delay='400'>
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="index.html"><img src={img} class="img-fluid" alt="logo"/></a>
@@ -55,26 +65,56 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30" data-aos='fade-up' data-aos-delay='600'>
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Home</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>about</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>services</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>portfolio</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Contact</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>About us</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Our Services</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Expert Team</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Contact us</p></li>
+                                <li><p style={{
+                                    color:'#fff',
+                                    textTransform:'capitalize'
+                                }}>Latest News</p></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50" data-aos='fade-up' data-aos-delay='800'>
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
                                 <h3>Subscribe</h3>

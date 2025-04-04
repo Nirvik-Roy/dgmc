@@ -16,7 +16,9 @@ const Testimonial = () => {
         dots: false,
         infinite: true,
         slidesToShow: 3,
-        speed: 500
+        speed: 500,
+        autoplay:true,
+        autoplaySpeed:1000,
       };
     return (
         <>

@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../assets/shape.png'
 import logo from '../assets/170872686_dream.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Header = () => {
+   useEffect(()=>{
+          AOS.init({
+              duration: 1000,
+              easing: 'ease-in-out',
+              once: true,
+  offset: 120, 
+          })
+       },[])
   return (
     <>
       <div className='header_wrapper' style={{
@@ -9,7 +19,7 @@ const Header = () => {
       }}>
      
             <div className='header_share_wrapper_div'>
-            <div className='universal_container' style={{
+            <div className='universal_container header_wrapper5652' style={{
               display:"flex",
               justifyContent:'space-between',
               alignItems:'center'
@@ -63,19 +73,19 @@ const Header = () => {
               justifyContent:'space-between',
               alignItems:'center'
             }}>
-            <div className='nav_logo'>
+            <div data-aos="fade-right" className='nav_logo'>
                   <img src={logo}/>
                 </div>
                 <div className='nav_links_div'>
-                    <p>Home</p>
-                    <p>About Us</p>
-                    <p>Our Projects</p>
-                    <p>Gallery</p>
-                    <p>Join As Volunteer</p>
-                    <p>Contact Us</p>
+                    <p data-aos="fade-down" data-aos-delay={400}>Home</p>
+                    <p data-aos="fade-down" data-aos-delay={500}>About Us</p>
+                    <p data-aos="fade-down" data-aos-delay={600}>Our Projects</p>
+                    <p data-aos="fade-down" data-aos-delay={700}>Gallery</p>
+                    <p data-aos="fade-down" data-aos-delay={800}>Join As Volunteer</p>
+                    <p data-aos="fade-down" data-aos-delay={900}>Contact Us</p>
                 </div>
                
-                <div className='nav_button_div'>
+                <div className='nav_button_div' data-aos="fade-left" data-aos-delay={1000}>
                     <p>Donate Us Now</p>
                     <div className='overlay'></div>
                 </div>
