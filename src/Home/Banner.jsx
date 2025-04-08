@@ -55,10 +55,20 @@ const Banner = () => {
         <h6>Providing Healthcare Access In Underserved Areas, HIV/AIDS Prevention, <br/>
         Maternal And Child Health Pro
         </h6>
+        <div className='d-flex justify-content-start align-items-center discover_btn_wrapper' style={{
+          columnGap:'15px'
+        }}>
         <div className='discover_btn'>
         <p>Donate Now</p>
         <div className='discover_overlay'></div>
         </div>
+
+        <div className='discover_btn'>
+        <p>About Us</p>
+        <div className='discover_overlay'></div>
+        </div>
+        </div>
+       
       </div>
         
       </div>
@@ -79,9 +89,18 @@ const Banner = () => {
         <h6>Providing Healthcare Access In Underserved Areas, HIV/AIDS Prevention, <br/>
         Maternal And Child Health Pro
         </h6>
+        <div className='d-flex justify-content-start align-items-center discover_btn_wrapper' style={{
+          columnGap:'15px'
+        }}>
         <div className='discover_btn'>
         <p>Donate Now</p>
         <div className='discover_overlay'></div>
+        </div>
+
+        <div className='discover_btn'>
+        <p>About Us</p>
+        <div className='discover_overlay'></div>
+        </div>
         </div>
       </div>
         
@@ -104,9 +123,18 @@ const Banner = () => {
         <h6>Providing Healthcare Access In Underserved Areas, HIV/AIDS Prevention, <br/>
         Maternal And Child Health Pro
         </h6>
+        <div className='d-flex justify-content-start align-items-center discover_btn_wrapper' style={{
+          columnGap:'15px'
+        }}>
         <div className='discover_btn'>
         <p>Donate Now</p>
         <div className='discover_overlay'></div>
+        </div>
+
+        <div className='discover_btn'>
+        <p>About Us</p>
+        <div className='discover_overlay'></div>
+        </div>
         </div>
       </div>
         

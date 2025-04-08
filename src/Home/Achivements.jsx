@@ -16,6 +16,7 @@ const Achivements = () => {
     return (
     
         <>
+      
             <div className='achivements_wrapper'>
                 <div className='universal_container achivements_wrapper'>
                     <div className='achivement_div1' data-aos='fade-up'>

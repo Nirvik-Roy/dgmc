@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import img from '../assets/shape.png'
 import logo from '../assets/170872686_dream.png'
 import AOS from 'aos';
@@ -12,6 +12,7 @@ const Header = () => {
   offset: 120, 
           })
        },[])
+       const [nav,setnav]=useState(false)
   return (
     <>
       <div className='header_wrapper' style={{
@@ -84,14 +85,108 @@ const Header = () => {
                     <p data-aos="fade-down" data-aos-delay={800}>Join As Volunteer</p>
                     <p data-aos="fade-down" data-aos-delay={900}>Contact Us</p>
                 </div>
+               <div style={{
+                display:"flex",
+                justifyContent:'flex-start',
+                alignItems:'center',
+                columnGap:'20px'
+               }}>
+               <div className='nav_button_div display' data-aos="fade-left" data-aos-delay={1000}>
+                    <p>Donate Us Now</p>
+                    <div className='overlay'></div>
+                </div>
+                <i onClick={(()=>{setnav(!nav)})} data-aos="fade-left" data-aos-delay={1200} style={{
+                  fontSize:'25px',
+                  color:'white'
+                }} class="fa-solid fa-bars-staggered"></i>
+               </div>
                
-                <div className='nav_button_div' data-aos="fade-left" data-aos-delay={1000}>
+            </div>
+                
+            </div> 
+
+            <div className={nav ? 'nav_responsive_wrapper_active' :'nav_responsive_wrapper'}>
+            <i class="fa-solid fa-xmark" onClick={(()=>{setnav(!nav)})}></i>
+            <div className='nav_logo_wrapper8568'>
+             <img src={logo}/>
+          
+            </div>
+            <div style={{
+              display:'flex',
+              
+             
+              flexDirection:'column',
+              rowGap:'30px',
+             
+            }}>
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+            <i class="fa-solid fa-house" style={{
+            fontSize:'25px'
+           }}></i>
+            <h1>Home</h1>
+            </div>
+
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+           <i class="fa-regular fa-address-card" style={{
+            fontSize:'25px'
+           }}></i>
+           <h1>About Us</h1>
+            </div>
+           
+
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+            <i class="fa-solid fa-bars-progress" style={{
+            fontSize:'25px'
+           }}></i>
+               <h1>Our Projects</h1>
+            </div>
+         
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+            <i class="fa-solid fa-images" style={{
+            fontSize:'25px'
+           }}></i>
+               <h1>Gallery</h1>
+            </div>
+           
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+           <i class="fa-solid fa-handshake-angle" style={{
+            fontSize:'25px'
+           }}></i>
+               <h1>Join As Volunteer</h1>
+            </div>
+
+            <div className='d-flex justify-content-start align-items-center' style={{
+              color:'white',
+              columnGap:'10px'
+            }}>
+         <i class="fa-solid fa-address-book" style={{
+            fontSize:'25px'
+           }}></i>
+               <h1>Contact Us</h1>
+            </div>
+         
+            <div className='nav_button_div'>
                     <p>Donate Us Now</p>
                     <div className='overlay'></div>
                 </div>
             </div>
-                
-            </div> 
+               
+            </div>
       </div>
     </>
   )

@@ -19,6 +19,28 @@ const Testimonial = () => {
         speed: 500,
         autoplay:true,
         autoplaySpeed:1000,
+        responsive: [
+            {
+              breakpoint: 1099,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode:true,
+                centerPadding: '20px',
+              }
+            },
+            {
+                breakpoint: 699,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode:false,
+                centerPadding: '0px',
+              }  
+            }
+        ]
       };
     return (
         <>

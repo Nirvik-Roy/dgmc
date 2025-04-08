@@ -13,6 +13,7 @@ const HomeAbout = () => {
             once: true,
 offset: 120, 
         })
+        
      },[])
     return (
         <>
@@ -67,11 +68,40 @@ offset: 120,
                     <div className='home_about_right'  style={{
                         position:'relative'
                     }}>
+                  <div className='img_1'>
+                  <img style={{
+                    width:'100%',
+                    height:'100%',
+                  objectFit:'cover',
+                  borderRadius:'15px'
+                  }} data-aos="fade-left" src={img2}/>
                   
-                  <img className='img_1' data-aos="fade-left" src={img2}/>
-                  <img className='img_2' data-aos="fade-right" src={img}/>
-                  <img className='img_3' data-aos="fade-up" src={img3}/>
-                  <img className='img_4' data-aos="fade-left" src={img1}/>
+                  </div>
+                 <div className='img_2'>
+                 <img style={{
+                    width:'100%',
+                    height:'100%',
+                  objectFit:'cover',
+                  borderRadius:'15px'
+                  }}  data-aos="fade-right" src={img}/>
+                 </div>
+               <div className='img_3'>
+               <img style={{
+                    width:'100%',
+                    height:'100%',
+                  objectFit:'cover',
+                  borderRadius:'15px'
+                  }}  data-aos="fade-right" src={img3}/>
+               </div>
+              <div className='img_4'>
+              <img  style={{
+                    width:'100%',
+                    height:'100%',
+                  objectFit:'cover',
+                  borderRadius:'15px'
+                  }} data-aos="fade-left" src={img1}/>
+              </div>
+                  
                     </div>
                 </div>
             </div>

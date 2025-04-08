@@ -30,6 +30,7 @@ const Imagegallery = () => {
         grabCursor={false}
         centeredSlides={true}
         slidesPerView={'auto'}
+     
           autoplay={
             {
               delay: 2000,
@@ -44,10 +45,71 @@ const Imagegallery = () => {
           modifier: 1,
           slideShadows: false,
         }}
+        breakpoints={{
+         324:{
+          coverflowEffect:{
+            depth:500
+          },
+          slidesPerView:1,
+         },
+         420:{
+          coverflowEffect:{
+            stretch:0,
+            depth:500
+           },
+           slidesPerView:1,
+         },
+         570:{
+          coverflowEffect:{
+            stretch:0,
+            depth:500
+           },
+          slidesPerView:1,
+
+         },
+         699:{
+          coverflowEffect:{
+            rotate: 30,
+          stretch: 30,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+          }
+         },
+         900:{
+          coverflowEffect:{
+            rotate: 30,
+          stretch: 50,
+          depth: 500,
+          modifier: 1,
+          slideShadows: false,
+          }
+         },
+         1100:{
+          coverflowEffect:{
+            rotate: 30,
+          stretch: 30,
+          depth: 500,
+          modifier: 1,
+          slideShadows: false,
+          }
+         },
+         1200:{
+          coverflowEffect:{
+            rotate: 30,
+          stretch: 30,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+          }
+         }
+        }}
         loop={true}
         pagination={false}
         modules={[EffectCoverflow, Pagination,Autoplay]}
         className="mySwiper"
+
+       
       >
         <SwiperSlide>
           <img src={img1} />

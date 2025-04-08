@@ -35,7 +35,7 @@ background-color: rgba(0, 0, 0, 0.404);
     position: relative;
     z-index: 9999;
     color: white;
-    font-size: 5.8vw;
+    font-size: 80px;
     font-family: nunito;
     font-weight: 800;
     line-height: 100px;
@@ -62,10 +62,10 @@ opacity: 1;
 
 .banner_wrapper h6{
     color: rgb(93, 210, 91);
-    font-family: "Caveat", cursive;;
-    font-style: italic;
+    font-family:  nunito;
+    
     font-weight: 800;
-    font-size: 1.4vw;
+    font-size: 20px;
     position: relative;
     z-index: 9999;
  
@@ -108,7 +108,7 @@ opacity: 1;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(52, 131, 221);
+    background-color: rgb(36, 230, 33);
     border: none;
     transition: 0.3s all ease-in-out;
     transform: scaleX(0);
@@ -260,6 +260,7 @@ opacity: 1;
     background-color: rgb(247, 245, 242);
     padding-top: 100px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 .projects_card_wrapper{
     display: grid;
@@ -270,6 +271,7 @@ opacity: 1;
     max-width: 92%;
     min-width: 92%;
     margin-inline: auto;
+    overflow: hidden;
 }
 .project_1{
     height: 60vh;   
@@ -537,13 +539,12 @@ opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
-  .achivements_wrapper{
+    overflow: hidden !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
+ 
   .achivement_div1 h1{
     font-family: nunito;
     color: white;
@@ -560,6 +561,7 @@ opacity: 1;
   }
   .brands_wrapper{
    padding: 0px 0px 50px 0px;
+   overflow: hidden;
   }
   .brands_divs_wrapper{
     margin-top: 50px;
@@ -573,4 +575,267 @@ opacity: 1;
     height: 100%;
     object-fit: contain;
   }
+ @media(max-width:1099px){
+    .homeabout_wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+    .home_about_left {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .home_about_right{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .img_1{
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 47%;
+        min-width: 47%;
+        height: auto;
+    }
+    .img_2{
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 47%;
+        min-width: 47%;
+        height: auto;
+    }
+    .img_3{
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 47%;
+        min-width: 47%;
+        height: auto;
+    }
+    .img_4{
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 47%;
+        min-width: 47%;
+        height: auto;
+    }
+    .achivements_wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 20px 0px;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ }
+ @media(max-width:999px){
+    .projects_card_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 50px 0px ;
+        width: 100%;
+        max-width: 92%;
+        min-width: 92%;
+        margin-inline: auto;
+    }
+   .image_gallery_Wrapper .swiper-slide img {
+        
+        box-shadow: none;
+    }
+ }
+ @media(max-width:943px){
+    .footer-widget-heading h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        position: relative;
+        margin-top: 20px;
+    }
+ }
+ @media(max-width:768px){
+    .single-cta {
+        margin-top: 20px;
+    }
+   
+ }
+ @media(max-width:699px){
+    
+    .image_gallery_Wrapper{
+        padding-bottom: 50px;
+    }
+    .projects_card_wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 50px 0px ;
+        width: 100%;
+        max-width: 92%;
+        min-width: 92%;
+        margin-inline: auto;
+    }
+    .testimonial_card1{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        opacity: 1;
+    }
+    .banner_wrapper h1{
+        font-size: 60px;
+        text-align: center;
+        line-height: normal;
+    }
+    .banner_wrapper h6{
+        font-size: 20px;
+        text-align: center;
+        line-height: normal;
+    }
+    .discover_btn_wrapper{
+        width: 100%;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+ }
+ @media(max-width:600px){
+
+    .img_1{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 350px;
+
+    }
+    .img_2{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 350px;
+    }
+    .img_3{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 350px;
+    }
+    .img_4{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 350px;
+    }
+    .testimonial_cards_wrapper .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 50px;
+        line-height: 1;
+        opacity: 1;
+        color:  rgb(36, 231, 33);
+        -webkit-font-smoothing: antialiased;
+        display: none;
+    }
+    .testimonial_cards_wrapper .slick-next:before{
+        font-family: 'slick';
+        font-size: 50px;
+        line-height: 1;
+        opacity: 1;
+        color:  rgb(36, 231, 33);
+        -webkit-font-smoothing: antialiased;
+        display: none;
+    }
+ }
+ @media(max-width:499px){
+    .banner_wrapper h1{
+        font-size: 50px;
+        text-align: center;
+        line-height: normal;
+    }
+    .banner_wrapper h6{
+        font-size: 15px;
+        text-align: center;
+        line-height: normal;
+    }
+    .discover_btn{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .discover_btn_wrapper{
+        flex-direction: column;
+        row-gap: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .achivement_div1 h2 {
+        text-align: center;
+        font-family: nunito;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .achivement_div1 h1 {
+        font-family: nunito;
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+      }
+      .achivements_wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 20px 0px;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+ }
+ @media(max-width:420px){
+    .banner_wrapper h1{
+        font-size: 40px;
+        text-align: center;
+        line-height: normal;
+    }
+    .about_head {
+        font-family: nunito;
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    .home_project_wrapper{
+        overflow: hidden;
+    }
+    .homeabout_wrapper{
+        overflow: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    
+ }
  
